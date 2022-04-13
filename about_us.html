@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <title>Fresh To Market - About Us</title>
+</head>
+<body>
+
+<!--This is the header for the page-->
+<header class="mb-md-0 mb-4">
+    <div class="container header-container no-gutters col-12 shadow-sm border border-secondary">
+        <div class="row py-2 py-md-0">
+
+            <!--This is the account icon which when pressed will bring down a dropdown menu and give you the option to sign out and return to
+             the login screen-->
+            <div class="col-3 align-items-center d-none d-md-flex">
+                <div class="dropright show d-block pl-3">
+                    <a class="dropdown-toggle pl-3" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="pt-4 pb-0" src="Assets/user-icon.png" alt="User Icon">
+                    </a>
+                    <p class="pl-1">Account</p>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="login.html">Sign Out</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--This is a hamburger menu that will appear smaller devices and move main navigation into a dropdown menu to save space-->
+            <div class="col-3 d-md-none d-sm-flex align-items-center navbar navbar-light">
+                <button class="navbar-toggler d-md-none d-sm-block" type="button" data-toggle="collapse" data-target="#myTogglerNav">
+                    <img class="navbar-toggler-icon" src="Assets/hamburger-icon.png" alt="hamburger icon">
+                </button>
+            </div>
+
+            <!--This is the site logo which will change depending on the screen size on medium and up breakpoints the desktop
+             logo will show and for small and lower screen sizes it will display the mobile version of the logo-->
+            <div class="col-6 align-items-center justify-content-center d-flex" id="site-logo">
+                <div class="col-md d-none d-md-block">
+                    <img class="img-fluid d-block mx-auto" src="Assets/desktop-logo.png" alt="Fruit stand with the name of the site to the right">
+                </div>
+                <div class="col-sm d-none d-block d-md-none">
+                    <img class="img-fluid d-block mx-auto" src="Assets/mobile-logo.png" alt="Image of the name of the site Fresh to Market">
+                </div>
+            </div>
+
+            <!--This is the shopping cart icon in the header -->
+            <div class="col-3 align-items-center justify-content-end d-flex">
+                <p class="d-inline text-right pr-4" id="shopping-cart-number">0</p>
+                <a href="#" class="shopping-cart-button" role="button">
+                    <img class="pr-md-4 pr-3" src="Assets/shopping-cart-icon.png" alt="Shopping cart Icon">
+                </a>
+            </div> <!--Col End -->
+
+            <!--Main navigation for the page which will be moved into a nav dropdown menu on smaller devices and will
+              display as a row when on medium to larger devices-->
+            <div class="col-12 mx-md-auto">
+                <div class="collapse navbar-collapse d-md-flex" id="myTogglerNav">
+                    <nav class="col-9 mx-md-auto">
+                        <ul class="navbar-nav justify-content-between flex-sm-column flex-md-row mt-3">
+                            <li class="nav-item col-md-3 text-left text-md-center pl-0">
+                                <a class="nav-link lead disabled" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item col-lg-3 col-md-4 text-left text-md-center pl-0">
+                                <a class="nav-link lead" href="how_it_works.html">How It Works</a>
+                            </li>
+                            <li class="nav-item col-md-3 text-left text-md-center pl-0">
+                                <a class="nav-link lead" href="index.html">Shop</a>
+                            </li>
+                            <li class="nav-item d-md-none d-sm-block text-left pl-0">
+                                <a class="nav-link lead" href="login.html">Sign Out</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div> <!-- End of container -->
+    </div>
+</header>
+
+<main>
+    <!--About Us Desktop Banner-->
+    <div class="container col-12 no-gutters px-0 d-none d-md-block text-center about-us-banner">
+        <div class="col">
+            <h1 class="text-center py-4 banner-title">About Us</h1>
+        </div>
+    </div>
+
+    <!--About Us Mobile Banner-->
+    <div class="container col-12 section-title border border-secondary no-gutters shadow-sm d-md-none d-sm-block yellow-bg">
+        <div class="col">
+            <h2 class="text-center py-1">About Us</h2>
+        </div>
+    </div>
+
+    <!-- Sub-nav Links   -->
+    <nav class="col-md-4 col-12 mx-md-auto">
+        <ul class="navbar-nav justify-content-lg-between justify-content-md-around flex-row mt-3">
+            <li class="nav-item col-md-4 text-center pl-0">
+                <a class="nav-link" href="#who-we-are">Who We Are</a>
+            </li>
+            <li class="nav-item col-md-4 text-center pl-md-0">
+                <a class="nav-link" href="#our-mission">Our Mission</a>
+            </li>
+            <li class="nav-item col-md-4 text-center pl-md-0">
+                <a class="nav-link" href="#contact-us">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Who Are Are-->
+    <article class="shadow-lg border border-secondary" id="who-we-are">
+        <div class="container px-md-0 py-5">
+            <div class="row">
+                <div class="col">
+                    <h2 class="pb-2 text-center text-md-left">Who We Are</h2>
+
+                    <!--This image will only appear if we are viewing this content in a smaller device-->
+                    <img class="img-fluid d-md-none mb-4 d-block mx-auto shadow" src="Assets/who_we_are-mobile-1.png"
+                         alt="Picture of a woman at a food stand selling goods">
+
+                    <p>
+                        Fresh to Market was created by Eric Terlop in April of 2021. It all started with a problem that
+                        needed to be solved, how can we help farmers sell high quality organic good and provide that to
+                        people who don’t feel comfortable going out in these times and enjoy eating farm fresh quality?
+                        The answer was simple and Fresh to Market was born. We know our farmers care a great deal about
+                        quality and we care too.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-flex justify-content-between align-items-center">
+                    <div class="col col-md-4 px-md-0">
+                        <img class="img-fluid d-none d-md-flex shadow" src="Assets/who_we_are-1.png"
+                             alt="Picture of a woman at a food stand selling goods">
+                    </div>
+                    <div class="col-4 d-none d-md-flex px-md-0 justify-content-center">
+                        <img class="img-fluid shadow" src="Assets/who_we_are-2.png"
+                             alt="Picture of a red farmhouse with a white roof in a field">
+                    </div>
+                    <div class="col-4 d-none d-md-flex px-md-0 justify-content-end">
+                        <img class="img-fluid shadow" src="Assets/who_we_are-3.png"
+                             alt="Picture of a group of people picking crops in a field, a person in a hood is carrying
+                             a box of goods">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!--Our Mission-->
+    <article class="shadow-lg border border-secondary yellow-bg" id="our-mission">
+        <div class="container px-md-0 py-5">
+            <div class="row flex-column flex-md-row">
+                <div class="col col-md-4 d-flex align-items-center">
+                    <img class="img-fluid shadow d-none d-md-flex" src="Assets/our_mission-1.png" alt="">
+                </div>
+                <div class="col col-md-8 d-flex align-items-center">
+                    <div>
+                        <h2 class="pb-2 text-center text-md-left">Our Mission</h2>
+                        <img class="img-fluid d-md-none mb-4 d-block mx-auto shadow" src="Assets/our_mission-1.png"
+                             alt="Picture of a tractor and another machine working the fields to cut down hay">
+                        <p>
+                            Our mission is simple, to help people. Farmers all over the nation struggle to get their goods
+                            on the market and are unable to makes ends meet consistently. People all over the world shouldn’t
+                            be denied fresh grown organic goods at a reasonable price. At Fresh to Market this is our way to
+                            help consumers and farmers alike by creating a virtual storefront.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!--Contact Us-->
+    <article class="shadow-lg border border-secondary mb-5 yellow-bg" id="contact-us">
+        <div class="container px-md-0 py-5">
+            <div class="row flex-column flex-md-row justify-content-between">
+                <div class="col col-md-5 d-inline-flex mb-md-0 mb-5 justify-content-md-between justify-content-center">
+                    <div>
+                        <h2 class="pb-2">Contact Information</h2>
+                        <div class="row">
+                            <div class="col-6">
+                                <h5>Address:</h5>
+                            </div>
+                            <div class="col-6">
+                                <address>
+                                    123 Fake St.<br>
+                                    Tampa, FL 34639
+                                </address>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <h5>Phone #:</h5>
+                            </div>
+                            <div class="col-6">
+                                <p>
+                                    (813) 123-4567
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-4">
+                                <h5>Email:</h5>
+                            </div>
+                            <div class="col-md-6 col-8">
+                                <p class="text-md-left text-center">
+                                    freshtomarket@hotmail.com
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <h5>Hours of Operation: :</h5>
+                            </div>
+                            <div class="col-6">
+                                <p>
+                                    Monday - Saturday<br>
+                                    8am est - 10pm est
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-5 d-inline-flex mt-md-0 mt-5">
+                    <div>
+                        <form class="contactUsForm">
+                            <h2 class="pb-2">Lets Get In Touch</h2>
+                            <p class="mb-3">
+                                At Fresh to Market we care about what you think! If you have any suggestions or questions
+                                send us a message below and we will get back to you as soon as possible.
+                            </p>
+
+                            <div class="form-group my-4">
+                                <label class="d-none" for="nameInput">Name</label>
+                                <input type="text" class="form-control nameInput" id="nameInput" placeholder="Name">
+                            </div>
+                            <div class="form-group mb-4">
+                                <label class="d-none" for="emailInput">Email</label>
+                                <input type="email" class="form-control emailInput" id="emailInput" placeholder="Email">
+                            </div>
+                            <div class="form-group mb-4">
+                                <label class="d-none" for="phoneInput">Phone Number</label>
+                                <input type="tel" class="form-control phoneInput" id="phoneInput" placeholder="Phone Number">
+                            </div>
+                            <div class="form-group mb-4">
+                                <label class="d-none" for="messageInput">Message</label>
+                                <textarea class="form-control messageInput" id="messageInput" rows="3" placeholder="Message"></textarea>
+                            </div>
+                            <button class="btn btn-success px-5 contactUsMessage" type="button">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</main>
+
+<!--This is the back to top button which will bring you back to the top of the page, this will only be displayed for smaller
+devices-->
+<div class="container d-md-none d-block">
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <a class="text-center" href="#site-logo" role="button">
+                <img src="Assets/arrow-up-icon.png" alt="Icon of an arrow pointing up">
+                <p>Back to top</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="eventModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title w-100 text-center">Success!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center py-5">
+                <p class="modal-message">Your Message has been sent Successfully!</p>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="btn btn-dark w-50" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--This is the footer of the page which holds three social media icons/links and some copyright information-->
+<footer class="mt-5">
+    <div class="container footer-container col-12 no-gutters pt-3">
+        <div class="row">
+            <div class="col-5 col-md-3 d-flex justify-content-around pt-3 pb-4 mx-auto">
+                <a class="fb-social-icon" href="https://www.facebook.com/FullSailUniversity/" target="_blank">Facebook</a>
+                <a class="twitter-social-icon" href="https://twitter.com/FullSail?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a>
+                <a class="instagram-social-icon" href="https://www.instagram.com/fullsail/?hl=en" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center py-3">
+                <p class="pb-0">© 2021 Fresh To Market. All Rights Reserved. Terms of use and Privacy Policy</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="JS/jquery-3.6.0.js"></script>
+<script src="JS/bootstrap.bundle.js"></script>
+<script src="JS/utility.js"></script>
+<script src="JS/cart.js"></script>
+<script src="JS/about-us.js"></script>
+</body>
+</html>

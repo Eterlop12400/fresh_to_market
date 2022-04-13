@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+.card {
+    width: 15rem;
+}
+html {
+    background-attachment: fixed;
+}
+body {
+    background: linear-gradient(6deg, rgba(186, 222, 207, 1) 0%, rgba(237, 246, 249, 1) 100%) fixed !important;
+    background: no-repeat;
+    color: #707070;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+h1, h2, h3, h4, nav {
+    font-family: 'Roboto Slab', serif;
+}
+.btn-success {
+    color: #707070 !important;
+    background: linear-gradient(6deg, rgba(186, 222, 207, 1) 0%, rgba(221, 252, 222, 1) 100%);
+}
+.btn-success:hover {
+    background: linear-gradient(6deg, rgb(178, 222, 204) 0%, rgba(200, 228, 201, 1) 100%);
+}
+.header-piece {
+    background: linear-gradient(0deg, #c3c7ff 0%, #a997df 100%);
+}
+.header-container {
+    background: linear-gradient(6deg, rgba(186, 222, 207, 1) 0%, rgba(237, 246, 249, 1) 100%);
+}
+#dropdownMenuLink:hover {
+    text-decoration: none;
+}
+.yellow-bg {
+    background: rgb(255, 246, 217);
+    background: linear-gradient(0deg, rgba(255, 246, 217, 1) 0%, rgba(247, 247, 247, 1) 100%);
+}
+.green-bg {
+    background: rgb(186, 222, 207);
+    background: linear-gradient(6deg, rgba(186, 222, 207, 1) 0%, rgba(237, 246, 249, 1) 100%);
+}
+.blue-bg {
+    background-color: #EDF6F9;
+}
+.ivory-bg {
+    background-color: ivory;
+}
+.shop-banner {
+    background-image: url("../Assets/shopping-banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.about-us-banner {
+    background-image: url("../Assets/about-us-banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.how-it-works-banner {
+    background-image: url("../Assets/how-it-works-banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.banner-title {
+    color: white;
+    text-shadow: 3px 5px 4px black;
+}
+.carousel-section-header {
+    color: black;
+}
+#shopping-cart-number {
+    position: relative;
+    left: 75px;
+    top: -10px;
+}
+a {
+    text-decoration: none !important;
+    color: #707070;
+}
+a:hover {
+    color: black;
+}
+.nav-link.disabled {
+    color: #E29578;
+}
+.footer-container {
+    background-color: black;
+}
+body .card {
+    background-color: #625F63;
+}
+body .card-title {
+    font-size: 18px;
+    color: #F8C7CC;
+}
+body .card-text {
+    font-size: 13px;
+    color: #C9FBFF;
+}
+body .card-price {
+    color: #FFD046;
+}
+.navbar-toggler {
+    border: none;
+}
+#formContainer {
+    height: 400px;
+}
+.fb-social-icon {
+    content: url("../Assets/fb-icon.png");
+}
+.fb-social-icon:hover {
+    content: url("../Assets/fb-icon-hover.png");
+}
+.twitter-social-icon {
+    content: url("../Assets/twitter-icon.png");
+}
+.twitter-social-icon:hover {
+    content: url("../Assets/twitter-icon-hover.png");
+}
+.instagram-social-icon {
+    content: url("../Assets/instagram-icon.png");
+}
+.instagram-social-icon:hover {
+    content: url("../Assets/instagram-icon-hover.png");
+}

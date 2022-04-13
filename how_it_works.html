@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <title>Fresh To Market - How It Works</title>
+</head>
+<body>
+
+<!--This is the header for the page-->
+<header class="mb-md-0 mb-4">
+    <div class="container header-container no-gutters col-12 shadow-sm border border-secondary">
+        <div class="row py-2 py-md-0">
+
+            <!--This is the account icon which when pressed will bring down a dropdown menu and give you the option to sign out and return to
+             the login screen-->
+            <div class="col-3 align-items-center d-none d-md-flex">
+                <div class="dropright show d-block pl-3">
+                    <a class="dropdown-toggle pl-3" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="pt-4 pb-0" src="Assets/user-icon.png" alt="User Icon">
+                    </a>
+                    <p class="pl-1">Account</p>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="login.html">Sign Out</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--This is a hamburger menu that will appear smaller devices and move main navigation into a dropdown menu to save space-->
+            <div class="col-3 d-md-none d-sm-flex align-items-center navbar navbar-light">
+                <button class="navbar-toggler d-md-none d-sm-block" type="button" data-toggle="collapse" data-target="#myTogglerNav">
+                    <img class="navbar-toggler-icon" src="Assets/hamburger-icon.png" alt="hamburger icon">
+                </button>
+            </div>
+
+            <!--This is the site logo which will change depending on the screen size on medium and up breakpoints the desktop
+             logo will show and for small and lower screen sizes it will display the mobile version of the logo-->
+            <div class="col-6 align-items-center justify-content-center d-flex" id="site-logo">
+                <div class="col-md d-none d-md-block">
+                    <img class="img-fluid d-block mx-auto" src="Assets/desktop-logo.png" alt="Fruit stand with the name of the site to the right">
+                </div>
+                <div class="col-sm d-none d-block d-md-none">
+                    <img class="img-fluid d-block mx-auto" src="Assets/mobile-logo.png" alt="Image of the name of the site Fresh to Market">
+                </div>
+            </div>
+
+            <!--This is the shopping cart icon in the header -->
+            <div class="col-3 align-items-center justify-content-end d-flex">
+                <p class="d-inline text-right pr-4" id="shopping-cart-number">0</p>
+                <a href="#" class="shopping-cart-button" role="button">
+                    <img class="pr-md-4 pr-3" src="Assets/shopping-cart-icon.png" alt="Shopping cart Icon">
+                </a>
+            </div> <!--Col End -->
+
+            <!--Main navigation for the page which will be moved into a nav dropdown menu on smaller devices and will
+              display as a row when on medium to larger devices-->
+            <div class="col-12 mx-md-auto">
+                <div class="collapse navbar-collapse d-md-flex" id="myTogglerNav">
+                    <nav class="col-9 mx-md-auto">
+                        <ul class="navbar-nav justify-content-between flex-sm-column flex-md-row mt-3">
+                            <li class="nav-item col-md-3 text-left text-md-center pl-0">
+                                <a class="nav-link lead" href="about_us.html">About Us</a>
+                            </li>
+                            <li class="nav-item col-lg-3 col-md-4 text-left text-md-center pl-0">
+                                <a class="nav-link lead disabled" href="#">How It Works</a>
+                            </li>
+                            <li class="nav-item col-md-3 text-left text-md-center pl-0">
+                                <a class="nav-link lead" href="index.html">Shop</a>
+                            </li>
+                            <li class="nav-item d-md-none d-sm-block text-left pl-0">
+                                <a class="nav-link lead" href="login.html">Sign Out</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End of container -->
+</header>
+
+<main>
+    <!--How it Works Desktop Banner-->
+    <div class="container col-12 no-gutters px-0 d-none d-md-block text-center how-it-works-banner">
+        <div class="col">
+            <h1 class="text-center py-4 banner-title">How It Works</h1>
+        </div>
+    </div>
+
+    <!--How it Works Mobile Banner-->
+    <div class="container col-12 section-title border border-secondary no-gutters shadow-sm d-md-none d-sm-block yellow-bg">
+        <div class="col">
+            <h2 class="text-center py-1">How It Works</h2>
+        </div>
+    </div>
+
+    <!--Page Intro-->
+    <div class="container col col-md-6 px-md-0 py-5">
+        <div class="row flex-column flex-md-row">
+            <div class="col col-md-4 d-flex align-items-center">
+                <img class="img-fluid shadow d-none d-md-flex" src="Assets/how_it_works-top.png"
+                     alt="A picture of a sign in the window saying come on in we're open">
+            </div>
+            <div class="col col-md-8 d-flex align-items-center">
+                <div>
+                    <img class="img-fluid d-md-none mb-4 d-block mx-auto shadow" src="Assets/how_it_works-top.png"
+                         alt="A picture of a sign in the window saying come on in we're open">
+                    <p>
+                        Here at Fresh to Market we believe simple is better. We wanted to be transparent with how the process looks from
+                        farm to table. Below is a break down of how it works when you order from Fresh to Market.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--We Work With Farmers-->
+    <article class="shadow-lg border border-secondary green-bg">
+        <div class="container px-md-0 py-5">
+            <div class="row flex-column flex-md-row">
+                <div class="col col-md-4 d-flex align-items-center">
+                    <img class="img-fluid shadow d-none d-md-flex" src="Assets/how_it_works-1.png"
+                         alt="A picture of a pair of hands holding a large amount of soil">
+                </div>
+                <div class="col col-md-8 d-flex align-items-center">
+                    <div>
+                        <h2 class="pb-2 text-center text-md-left">We Work With Farmers</h2>
+                        <img class="img-fluid d-md-none mb-4 d-block mx-auto shadow" src="Assets/how_it_works-1.png"
+                             alt="A picture of a pair of hands holding a large amount of soil">
+                        <p>
+                            We work with all farmers big or small with one thing in mind. We want the best produce for
+                            our customers, we ensure all produce is organic and non GMO. Once we inspect the produce we
+                            keep it well kept in our facility.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+    <!--You Purchase Fresh Goods-->
+    <article class="shadow-lg border border-secondary yellow-bg">
+        <div class="container px-md-0 py-5">
+            <div class="row flex-column flex-md-row flex-md-row-reverse">
+                <div class="col col-md-4 d-flex align-items-center">
+                    <img class="img-fluid shadow d-none d-md-flex" src="Assets/how_it_works-2.png"
+                         alt="A picture of a man reaching over a fruit stand">
+                </div>
+                <div class="col col-md-8 d-flex align-items-center">
+                    <div>
+                        <h2 class="pb-2 text-center text-md-left">You Purchase Fresh Goods</h2>
+                        <img class="img-fluid d-md-none mb-4 d-block mx-auto shadow" src="Assets/how_it_works-2.png"
+                             alt="A picture of a man reaching over a fruit stand">
+                        <p>
+                            Now that we know what we have in stock that is guaranteed fresh we will then have those
+                            items listed on the site for purchase. Buying an item is as simple as clicking the add to
+                            cart button.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!--We Package Fresh Goods-->
+    <article class="shadow-lg border border-secondary green-bg">
+        <div class="container px-md-0 py-5">
+            <div class="row flex-column flex-md-row">
+                <div class="col col-md-4 d-flex align-items-center">
+                    <img class="img-fluid shadow d-none d-md-flex" src="Assets/how_it_works-3.png"
+                         alt="A picture of a man wearing a mask carrying a box into a truck filled it boxes">
+                </div>
+                <div class="col col-md-8 d-flex align-items-center">
+                    <div>
+                        <h2 class="pb-2 text-center text-md-left">We Package Fresh Goods</h2>
+                        <img class="img-fluid d-md-none mb-4 d-block mx-auto shadow" src="Assets/how_it_works-3.png"
+                             alt="A picture of a man wearing a mask carrying a box into a truck filled it boxes">
+                        <p>
+                            Once you checkout and your order is placed, we will doing another inspection of your produce
+                            and will package them up for you with our climate controlled & eco friendly packaging to
+                            ensure freshness.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!--We Deliver To Your Doorstep-->
+    <article class="shadow-lg border border-secondary yellow-bg mb-5">
+        <div class="container px-md-0 py-5">
+            <div class="row flex-column flex-md-row flex-md-row-reverse">
+                <div class="col col-md-4 d-flex align-items-center">
+                    <img class="img-fluid shadow d-none d-md-flex" src="Assets/how_it_works-4.png"
+                         alt="A picture of a large brown paper bag with a note that says thank you">
+                </div>
+                <div class="col col-md-8 d-flex align-items-center">
+                    <div>
+                        <h2 class="pb-2 text-center text-md-left">We Deliver To Your Doorstep</h2>
+                        <img class="img-fluid d-md-none mb-4 d-block mx-auto shadow" src="Assets/how_it_works-4.png"
+                             alt="A picture of a large brown paper bag with a note that says thank you">
+                        <p>
+                            This is our favorite part of the process! The items you ordered will arrive on your doorstep
+                            ready for you to enjoy the farm fresh flavor. As this comes to the close of our process it
+                            starts again with every order.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</main>
+
+<!--This is the back to top button which will bring you back to the top of the page, this will only be displayed for smaller
+devices-->
+<div class="container d-md-none d-block">
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <a class="text-center" href="#site-logo" role="button">
+                <img src="Assets/arrow-up-icon.png" alt="Icon of an arrow pointing up">
+                <p>Back to top</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="eventModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title w-100 text-center">Success!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center py-5">
+                <p class="modal-message">You have checked out successfully!</p>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="btn btn-dark w-50" data-dismiss="modal">Okay</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--This is the footer of the page which holds three social media icons/links and some copyright information-->
+<footer class="mt-5">
+    <div class="container footer-container col-12 no-gutters pt-3">
+        <div class="row">
+            <div class="col-5 col-md-3 d-flex justify-content-around pt-3 pb-4 mx-auto">
+                <a class="fb-social-icon" href="https://www.facebook.com/FullSailUniversity/" target="_blank">Facebook</a>
+                <a class="twitter-social-icon" href="https://twitter.com/FullSail?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a>
+                <a class="instagram-social-icon" href="https://www.instagram.com/fullsail/?hl=en" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center py-3">
+                <p class="pb-0">© 2021 Fresh To Market. All Rights Reserved. Terms of use and Privacy Policy</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="JS/jquery-3.6.0.js"></script>
+<script src="JS/bootstrap.bundle.js"></script>
+<script src="JS/cart.js"></script>
+</body>
+</html>

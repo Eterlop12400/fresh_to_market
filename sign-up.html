@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <title>Fresh To Market - Sign Up</title>
+</head>
+<body>
+<main>
+    <div class="container">
+        <div class="row mt-5 justify-content-center">
+            <div class="col col-6 d-flex justify-content-center">
+                <img class="img-fluid" src="Assets/login-logo-desktop.png" alt="Site logo of a fruit stand with Fresh to market in text below it">
+            </div>
+        </div>
+        <div class="row my-5 justify-content-center">
+            <div class="col col-7 d-flex align-items-center blue-bg justify-content-center shadow border border-secondary rounded" id="formContainer">
+                <div class="col col-md-6">
+                    <div class="login-form">
+                        <!--Sign Up Form-->
+                        <form>
+                            <h2 class="pb-5 text-center">Sign Up</h2>
+
+                            <div class="input-group mb-4 align-items-center">
+                                <div class="input-group-prepend mr-1">
+                                    <img class="figure-img mb-0" src="Assets/name-icon.png" alt="Icon that looks like a name tag">
+                                </div>
+                                <input type="text" class="form-control nameInput" placeholder="Please enter a name" aria-label="Name">
+                            </div>
+
+                            <div class="input-group mb-4 align-items-center">
+                                <div class="input-group-prepend mr-1">
+                                    <img class="figure-img mb-0" src="Assets/email-icon.png" alt="Icon that looks like a piece of mail">
+                                </div>
+                                <input type="email" class="form-control emailInput" placeholder="Please enter an email" aria-label="Email">
+                            </div>
+
+                            <div class="input-group my-2 align-items-center">
+                                <div class="input-group-prepend mr-1">
+                                    <img class="figure-img mb-0" src="Assets/password-icon.png" alt="Icon that looks like a key">
+                                </div>
+                                <input type="password" class="form-control passwordInput" placeholder="Please enter a password" aria-label="Password">
+                            </div>
+                            <button class="btn btn-success mt-4 w-100 createAccountButton" type="button">Create Account</button>
+                        </form>
+                        <p class="text-center small mt-1">Need to go back? <a href="login.html">Click Here!</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Modal -->
+<div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="eventModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title w-100 text-center">Success!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center py-5">
+                <p class="modal-message"></p>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="btn btn-dark w-50" data-dismiss="modal">Okay</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script src="JS/jquery-3.6.0.js"></script>
+<script src="JS/bootstrap.bundle.js"></script>
+<script src="JS/utility.js"></script>
+<script src="JS/sign-up.js"></script>
+</body>
+</html>

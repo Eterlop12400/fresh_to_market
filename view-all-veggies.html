@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <title>Fresh To Market - Shop</title>
+</head>
+<body>
+
+<!--This is the header for the page-->
+<header>
+    <div class="container header-container no-gutters col-12 shadow-sm border border-secondary">
+        <div class="row py-2 py-md-0">
+
+            <!--This is the account icon which when pressed will bring down a dropdown menu and give you the option to sign out and return to
+             the login screen-->
+            <div class="col-3 align-items-center d-none d-md-flex">
+                <div class="dropright show d-block pl-3">
+                    <a class="dropdown-toggle pl-3" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="pt-4 pb-0" src="Assets/user-icon.png" alt="User Icon">
+                    </a>
+                    <p class="pl-1">Account</p>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="login.html">Sign Out</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--This is a hamburger menu that will appear smaller devices and move main navigation into a dropdown menu to save space-->
+            <div class="col-3 d-md-none d-sm-flex align-items-center navbar navbar-light">
+                <button class="navbar-toggler d-md-none d-sm-block" type="button" data-toggle="collapse" data-target="#myTogglerNav">
+                    <img class="navbar-toggler-icon" src="Assets/hamburger-icon.png" alt="hamburger icon">
+                </button>
+            </div>
+
+
+            <!--This is the site logo which will change depending on the screen size on medium and up breakpoints the desktop
+             logo will show and for small and lower screen sizes it will display the mobile version of the logo-->
+            <div class="col-6 align-items-center justify-content-center d-flex" id="site-logo">
+                <div class="col-md d-none d-md-block">
+                    <img class="img-fluid d-block mx-auto" src="Assets/desktop-logo.png" alt="Fruit stand with the name of the site to the right">
+                </div>
+                <div class="col-sm d-none d-block d-md-none">
+                    <img class="img-fluid d-block mx-auto" src="Assets/mobile-logo.png" alt="Image of the name of the site Fresh to Market">
+                </div>
+            </div>
+
+            <!--This is the shopping cart icon in the header -->
+            <div class="col-3 align-items-center justify-content-end d-flex">
+                <p class="d-inline text-right pr-4" id="shopping-cart-number">0</p>
+                <a href="#" class="shopping-cart-button" role="button">
+                    <img class="pr-md-4 pr-3" src="Assets/shopping-cart-icon.png" alt="Shopping cart Icon">
+                </a>
+            </div> <!--Col End -->
+        </div> <!--Row End -->
+
+        <!--Main navigation for the page which will be moved into a nav dropdown menu on smaller devices and will
+          display as a row when on medium to larger devices-->
+        <div class="col-12 mx-md-auto">
+            <div class="collapse navbar-collapse d-md-flex" id="myTogglerNav">
+                <nav class="col-9 mx-md-auto">
+                    <ul class="navbar-nav justify-content-between flex-sm-column flex-md-row mt-3">
+                        <li class="nav-item col-md-3 text-left text-md-center pl-0">
+                            <a class="nav-link lead" href="about_us.html">About Us</a>
+                        </li>
+                        <li class="nav-item col-lg-3 col-md-4 text-left text-md-center pl-0">
+                            <a class="nav-link lead" href="how_it_works.html">How It Works</a>
+                        </li>
+                        <li class="nav-item col-md-3 text-left text-md-center pl-0">
+                            <a class="nav-link lead disabled" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item d-md-none d-sm-block text-left pl-0">
+                            <a class="nav-link lead" href="login.html">Sign Out</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </div> <!-- End of container -->
+</header>
+
+<main>
+    <!--Shop Desktop Banner-->
+    <div class="container col-12 img-fluid no-gutters px-0 d-none d-md-block text-center shop-banner">
+        <div class="col">
+            <h1 class="text-center py-4 banner-title">Shop</h1>
+        </div>
+    </div>
+
+    <!--Shop Mobile Banner-->
+    <div class="container col-12 section-title border border-secondary no-gutters shadow-sm d-md-none d-sm-block yellow-bg mt-4">
+        <div class="col">
+            <h2 class="text-center py-1">Shop</h2>
+        </div>
+    </div>
+
+    <!-- Sub-nav Links   -->
+    <nav class="col-md-4 col-12 mx-md-auto">
+        <ul class="navbar-nav justify-content-lg-between justify-content-md-around flex-row mt-3">
+            <li class="nav-item col-3 col-lg-1 col-md-5 text-center pl-0">
+                <a class="nav-link" href="view-all-deals.html">Deals</a>
+            </li>
+            <li class="nav-item col-3 col-lg-1 col-md-5 text-center pl-md-0">
+                <a class="nav-link" href="view-all-seasonal.html">Seasonal</a>
+            </li>
+            <li class="nav-item col-3 col-lg-1 col-md-5 text-center pl-md-0">
+                <a class="nav-link" href="view-all-fruits.html">Fruits</a>
+            </li>
+            <li class="nav-item col-3 col-lg-1 col-md-5 text-center pl-md-0">
+                <a class="nav-link disabled" href="#">Veggies</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--  Search Bar  -->
+    <div class="container col-12 my-5">
+        <div class="row">
+            <div class="col-md-3 mx-auto">
+                <div class="input-group">
+                    <label class="d-none" for="searchInput">Search</label>
+                    <input type="text" class="form-control search-input" id="searchInput" placeholder="Search...">
+                    <div class="input-group-append">
+                        <button class="btn search-btn" type="button">
+                            <img src="Assets/search-icon.png" alt="Magnifying Glass Icon for search">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <a href="index.html" role="button">
+                    <p>&lt; Back</p>
+                </a>
+            </div>
+        </div>
+        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 justify-content-center">
+            <!--  Broccoli Card -->
+            <div class="col col-md d-block d-md-flex mx-auto">
+                <div class="card mb-2 shadow-sm mx-auto">
+                    <img class="mx-auto d-block mt-1" alt="A fresh stock of broccoli still on the plant" src="Assets/broccoli-icon.png">
+                    <div class="card-body pt-2">
+                        <h4 class="card-title text-center mb-1">Organic Broccoli</h4>
+                        <p class="card-text">These crops were grown on Happy Hill Farms and are organic and non GMO.</p>
+                        <p class="text-center card-price">$1.99/each</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <label for="quantity-select-broccoli"></label>
+                            <select class="form-control col-3 d-inline px-2" name="quantity" id="quantity-select-broccoli">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <button class="btn btn-success d-inline col-7 ml-1 add-to-cart" type="button">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Card-->
+
+            <!--  Green Beans Card -->
+            <div class="col col-md d-block d-md-flex mx-auto">
+                <div class="card mb-2 shadow-sm mx-auto">
+                    <img class="mx-auto d-block mt-1" alt="A large pile of dragon fruits" src="Assets/green-bean-icon.png">
+                    <div class="card-body pt-2">
+                        <h4 class="card-title text-center mb-1">Organic Green Beans</h4>
+                        <p class="card-text">These crops were grown on Happy Hill Farms and are organic and non GMO.</p>
+                        <p class="text-center card-price">$1.99/each</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <label for="quantity-select-green-beans"></label>
+                            <select class="form-control col-3 d-inline px-2" name="quantity" id="quantity-select-green-beans">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <button class="btn btn-success d-inline col-7 ml-1 add-to-cart" type="button">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Card-->
+
+            <!--  Cucumber Card -->
+            <div class="col col-md d-block d-md-flex mx-auto">
+                <div class="card mb-2 shadow-sm mx-auto">
+                    <img class="mx-auto d-block mt-1" alt="A Large amount of cucumbers in a pile" src="Assets/cucumber-icon.png">
+                    <div class="card-body pt-2">
+                        <h4 class="card-title text-center mb-1">Organic Cucumber</h4>
+                        <p class="card-text">These crops were grown on Happy Hill Farms and are organic and non GMO.</p>
+                        <p class="text-center card-price">$1.99/each</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <label for="quantity-select-cucumber"></label>
+                            <select class="form-control col-3 d-inline px-2" name="quantity" id="quantity-select-cucumber">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <button class="btn btn-success d-inline col-7 ml-1 add-to-cart" type="button">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Card-->
+
+            <!--  Garlic Card -->
+            <div class="col col-md d-block d-md-flex mx-auto">
+                <div class="card mb-2 shadow-sm mx-auto">
+                    <img class="mx-auto d-block mt-1" alt="A large amount of garlic in a pile" src="Assets/garlic-icon.png">
+                    <div class="card-body pt-2">
+                        <h4 class="card-title text-center mb-1">Organic Garlic</h4>
+                        <p class="card-text">These crops were grown on Happy Hill Farms and are organic and non GMO.</p>
+                        <p class="text-center card-price">$0.99/each</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <label for="quantity-select-garlic"></label>
+                            <select class="form-control col-3 d-inline px-2" name="quantity" id="quantity-select-garlic">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <button class="btn btn-success d-inline col-7 ml-1 add-to-cart" type="button">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Card-->
+
+            <!--  Mini Cucumber Card -->
+            <div class="col d-block d-md-flex mx-auto mt-md-3 mt-1">
+                <div class="card mb-2 shadow-sm mx-auto">
+                    <img class="mx-auto d-block mt-1" alt="A Large amount of cucumbers in a pile" src="Assets/cucumber-icon.png">
+                    <div class="card-body pt-2">
+                        <h4 class="card-title text-center mb-1">Org. Mini Cucumber</h4>
+                        <p class="card-text">These crops were grown on Happy Hill Farms and are organic and non GMO.</p>
+                        <p class="text-center card-price">$0.99/each</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <label for="quantity-select-mini-cucumber"></label>
+                            <select class="form-control col-3 d-inline px-2" name="quantity" id="quantity-select-mini-cucumber">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <button class="btn btn-success d-inline col-7 ml-1 add-to-cart" type="button">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Card-->
+
+            <!--  Giant Card -->
+            <div class="col d-block d-md-flex mx-auto mt-md-3 mt-1">
+                <div class="card mb-2 shadow-sm mx-auto">
+                    <img class="mx-auto d-block mt-1" alt="A large amount of garlic in a pile" src="Assets/garlic-icon.png">
+                    <div class="card-body pt-2">
+                        <h4 class="card-title text-center mb-1">Organic Giant Garlic</h4>
+                        <p class="card-text">These crops were grown on Happy Hill Farms and are organic and non GMO.</p>
+                        <p class="text-center card-price">$1.50/each</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <label for="quantity-select-giant-garlic"></label>
+                            <select class="form-control col-3 d-inline px-2" name="quantity" id="quantity-select-giant-garlic">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <button class="btn btn-success d-inline col-7 ml-1 add-to-cart" type="button">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Card-->
+
+            <!--  Leek Card -->
+            <div class="col d-block d-md-flex mx-auto mt-md-3 mt-1">
+                <div class="card mb-2 shadow-sm mx-auto">
+                    <img class="mx-auto d-block mt-1" alt="A large amount of leeks in a bunch together" src="Assets/leek-icon.png">
+                    <div class="card-body pt-2">
+                        <h4 class="card-title text-center mb-1">Organic Leek</h4>
+                        <p class="card-text">These crops were grown on Happy Hill Farms and are organic and non GMO.</p>
+                        <p class="text-center card-price">$4.99/each</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <label for="quantity-select-leek"></label>
+                            <select class="form-control col-3 d-inline px-2" name="quantity" id="quantity-select-leek">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <button class="btn btn-success d-inline col-7 ml-1 add-to-cart" type="button">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Card-->
+
+            <!--  Avocado Card -->
+            <div class="col d-block d-md-flex mx-auto mt-md-3 mt-1">
+                <div class="card mb-2 shadow-sm mx-auto">
+                    <img class="mx-auto d-block mt-1" alt="A pile of large fresh green avocados" src="Assets/avocado-icon.png">
+                    <div class="card-body pt-2">
+                        <h4 class="card-title text-center mb-1">Organic Avocado</h4>
+                        <p class="card-text">These crops were grown on Happy Hill Farms and are organic and non GMO.</p>
+                        <p class="text-center card-price">$1.99/each</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <label for="quantity-select-avocado"></label>
+                            <select class="form-control col-3 d-inline px-2" name="quantity" id="quantity-select-avocado">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <button class="btn btn-success d-inline col-7 ml-1 add-to-cart" type="button">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Card-->
+
+        </div>
+    </div>
+</main>
+
+<!--This is the back to top button which will bring you back to the top of the page, this will only be displayed for smaller
+devices-->
+<div class="container d-md-none d-block mt-4">
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <a class="text-center" href="#site-logo" role="button">
+                <img src="Assets/arrow-up-icon.png" alt="Icon of an arrow pointing up">
+                <p>Back to top</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="eventModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title w-100 text-center">Success!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center py-5">
+                <p class="modal-message">You have checked out successfully!</p>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="btn btn-dark w-50" data-dismiss="modal">Okay</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--This is the footer of the page which holds three social media icons/links and some copyright information-->
+<footer class="mt-5">
+    <div class="container footer-container col-12 no-gutters pt-3">
+        <div class="row">
+            <div class="col-5 col-md-3 d-flex justify-content-around pt-3 pb-4 mx-auto">
+                <a class="fb-social-icon" href="https://www.facebook.com/FullSailUniversity/" target="_blank">Facebook</a>
+                <a class="twitter-social-icon" href="https://twitter.com/FullSail?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a>
+                <a class="instagram-social-icon" href="https://www.instagram.com/fullsail/?hl=en" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center py-3">
+                <p class="pb-0">© 2021 Fresh To Market. All Rights Reserved. Terms of use and Privacy Policy</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="JS/jquery-3.6.0.js"></script>
+<script src="JS/bootstrap.bundle.js"></script>
+<script src="JS/utility.js"></script>
+<script src="JS/search-bar.js"></script>
+<script src="JS/cart.js"></script>
+<script src="JS/shop.js"></script>
+</body>
+</html>
